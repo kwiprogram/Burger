@@ -1,0 +1,304 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../image/1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    width: 100%;
+    background-color: black;
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+}
+#slide{
+    width: 50%;
+    height: 500px;
+    .slide{
+        display: flex;
+        align-items: center;
+    }
+}
+.carousel-item{
+    h3{
+        color: #fff;
+        font-size: 40px;
+    }
+    p{
+        margin-top: 20px;
+        color: #fff;
+        font-size: 18px;
+    }
+}
+.content{
+    margin-top: 50px;
+    width: 100%;
+    background-color: #222831;
+    padding: 50px;
+    display: flex;
+    gap: 70px;
+    border-radius: 20px;
+    .image{
+        width: 140px;
+        height: 140px;
+        border: 5px solid gold;
+        border-radius: 50%;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 100%;
+            transition: all ease-in-out 0.2s;
+        }
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        line-height: 20px;
+        p{
+            font-size: 25px;
+            color: #fff;
+            span{
+                font-size: 18px;
+            }
+        }
+    }
+}
+.content:hover img{
+    transform: scale(1.08);
+}
+
+.container-1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .title{
+        h1{
+            font-size: 40px;
+            text-align: center;
+        }
+    }
+    .button-menu{
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        button{
+            color: black;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            #first{
+                background-color: rgb(42, 40, 40);
+                color: white;
+            }
+        }
+    }
+    .card{
+        margin-top: 20px;
+        width: 100%;
+        height: 400px;
+        background-color: #222831;
+        border: none;
+        border-radius: 20px;
+        overflow: hidden;
+        .image{
+            width: 100%;
+            height: 50%;
+            background-color: #e5e3e3;
+            border-radius: 0 0 0 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            img{
+                width: 160px;
+                height: 160px;
+                border-radius: 50%;
+                transition: all ease-in-out 0.2s;
+            }
+        }
+        .text-1{
+            width: 100%;
+            height: 50%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .text-2{
+                h2{
+                    font-size: 22px;
+                    color: #fff;
+                }
+                p{
+                    font-size: 18px;
+                    color: #fff;
+                }
+            }
+            .buy{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                span{
+                    font-size: 18px;
+                    color: #fff;
+                }
+                button{
+                    border: none;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50px;
+                    background-color: gold;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    i{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.card:hover img{
+    transform: scale(1.08);
+}
+#first{
+    background-color: rgb(42, 40, 40);
+    color: white;
+}
+
+.viveiw{
+    padding: 30px;
+}
+#banner-1{
+    background-color: #222831;
+    padding: 70px 20px;
+    .buu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .image{
+            width: 50%;
+            height: 100%;
+        }
+        .title{
+            width: 50%;
+            height: 100%;
+            h3{
+                font-size: 30px;
+                color: #fff;
+            }
+            p{
+                font-size: 20px;
+                color: #fff;
+            }
+        }
+    }
+}
+#map iframe{
+    width: 100%;
+    height: 367px;
+}
+
+@media (max-width: 576px){
+    footer{
+        span{
+            font-size: 14px;
+            text-align: center;
+        }
+    }
+    #banner{
+        width: 100%;
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #menu{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    #navbar{
+        display: flex;
+        flex-direction: column;
+    }
+    #slide{
+        width: 100%;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .container-1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .title{
+            h1{
+                font-size: 30px;
+                text-align: center;
+            }
+        }
+        .button-menu{
+            width: 100%;
+            display: flex;
+            gap: 5px;
+            button{
+                color: black;
+                border: none;
+                border-radius: 20px;
+                padding: 5px 10px;
+            }
+        }
+    }
+    #first{
+        background-color: rgb(42, 40, 40);
+        color: white;
+    }
+    .card{
+        margin-top: 30px;
+    }
+    #banner-1{
+        background-color: #222831;
+        padding: 70px 20px;
+    .buu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .image{
+            width: 100%;
+            height: 100%;
+            img{
+                width: 100%;
+            }
+        }
+        .title{
+            width: 100%;
+            height: 100%;
+            h3{
+                font-size: 25px;
+                color: #fff;
+            }
+            p{
+                font-size: 16px;
+                color: #fff;
+            }
+        }
+    }
+}
+}   
